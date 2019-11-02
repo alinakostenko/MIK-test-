@@ -14,7 +14,7 @@ body {
     height: 100%;
     background-color: #0F0F10;
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
 }
 
 img {
@@ -34,7 +34,7 @@ header {
     min-width: 1366px;
     padding-top: 16px;
     background: rgba(17, 18, 18, 0.8);
-    font-family: Roboto sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .row {
@@ -142,12 +142,20 @@ header ul {
 /* MAIN */
 
 main {
+    font-family: Ubuntu, sans-serif;
+}
+
+/* Section Slider*/
+
+.slider {
     height: 680px;
-    font-family: Ubuntu sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
     padding: 0 16% 0;
 }
 
-main::after {
+.slider::after {
     content: "";
     background: url(../image/bg.jpg);
     opacity: 0.4;
@@ -157,12 +165,7 @@ main::after {
     right: 0;
     position: absolute;
     z-index: -1;
-}
-
-.slider {
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
+    height: 680px;
 }
 
 .slider ul {
@@ -198,4 +201,44 @@ main::after {
 
 .scroll img {
     margin: 10px auto 0;
+}
+
+/* Section Partners*/
+
+.partners {
+    font-style: normal;
+    color: #FFFFFF;
+    padding: 50px 16% 130px;
+}
+
+.partners_text h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.partners_text p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.partners_logo {
+    padding: 0 46px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.partners_logo a {
+    margin-top: 50px;
+}
+
+.partners_logo a:nth-child(4) {
+    mix-blend-mode: lighten;
 }
